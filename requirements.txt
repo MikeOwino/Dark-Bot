@@ -1,0 +1,13 @@
+aiohttp
+aiofiles
+asyncio
+covid
+git+https://github.com/subinps/pyrogram.git@session
+gTTS
+requests
+pillow==8.3.2
+py-tgcalls==0.8.3
+python-dotenv
+TgCrypto
+wget
+wikipedia

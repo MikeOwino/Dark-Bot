@@ -1,0 +1,50 @@
+{
+    "name": "Mister Dark Prince",
+    "description": "Useless bot.",
+    "logo": "https://telegra.ph/file/11eb965b71332ed5c20fe.jpg",
+    "keywords": [
+        "Telegram",
+        "Self bot",
+        "Mister Dark Prince"
+    ],
+    "repository": "https://github.com/Mr-dark-prince/Mister_Dark_Prince",
+    "env": {
+        "SESSION": {
+            "description": "Pyrogram String Session",
+            "required": false
+        },
+        "API_ID": {
+            "description": "Your api id from my.telegram.org/apps",
+            "required": false
+        },
+        "HNDLR": {
+            "description": "Set handler... Or blank it for cmdless",
+            "required": false,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your api hash from my.telegram.org/apps",
+            "required": false
+        },
+        "SUDO_USERS": {
+            "description": "User ID list user counts as admin everywhere(separator using space)",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
