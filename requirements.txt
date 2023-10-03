@@ -5,7 +5,7 @@ covid
 git+https://github.com/subinps/pyrogram.git@session
 gTTS
 requests
-pillow==8.3.2
+pillow==10.0.1
 py-tgcalls==0.8.3
 python-dotenv
 TgCrypto
